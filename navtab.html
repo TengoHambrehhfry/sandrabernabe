@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandra Bernabé</title>
+		   <link rel="icon" href="img/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="navtabstyle.css">
+	    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles */
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .nav-tab {
+            transition: all 0.3s ease;
+        }
+        .nav-tab.active {
+            background-color: #85054D;
+            color: white;
+        }
+        .media-card:hover {
+            transform: translateY(-5px);
+box-shadow: 0 10px 20px rgba(251, 135, 0, 0.1);
+        }
+        .audio-control:hover {
+            transform: scale(1.1);
+        }
+        .overlay {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .design-card:hover .overlay {
+            opacity: 1;
+        }
+		
+		.design-card .overlay p {
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+    }
+    </style>
+</head>
+<body class="font-montserrat bg-white text-gray-800">
+	<custom-header></custom-header>
+
+    <div class="container mx-auto px-4 py-8" style="margin-bottom: 70px; padding-bottom: 40px;">
+            <h2 class="section-title text-center" style="margin-top: 150px;">PROYECTOS</h2>
+        
+        <!-- Navigation Tabs -->
+        <div class="flex flex-wrap justify-center gap-2 mb-8">
+            <button class="nav-tab px-4 py-2 rounded-t-lg border border-gray-200 bg-white" data-tab="photography">FOTOGRAFÍA</button>
+            <button class="nav-tab px-4 py-2 rounded-t-lg border border-gray-200 bg-white" data-tab="animations">ANIMACIONES</button>
+            <button class="nav-tab px-4 py-2 rounded-t-lg border border-gray-200 bg-white" data-tab="shorts">SHORTS</button>
+            <button class="nav-tab px-4 py-2 rounded-t-lg border border-gray-200 bg-white" data-tab="videos">VIDEOS</button>
+            <button class="nav-tab px-4 py-2 rounded-t-lg border border-gray-200 bg-white" data-tab="audio">AUDIO</button>
+            <button class="nav-tab px-4 py-2 rounded-t-lg border border-gray-200 bg-white" data-tab="design">DISEÑO</button>
+        </div>
+
+        <!-- Tab Contents -->
+        <div class="bg-white rounded-lg shadow-lg p-6">
+            <!-- Photography Tab -->
+            <div id="photography" class="tab-content active">
+                <h2 class="text-2xl font-semibold mb-6 text-gray-800 text-center" style="color: #85054D;"><b>Fotografía</b></h2>
+                
+                <div>
+                    <h3 class="text-xl font-medium mb-4 text-gray-700">Cobertura</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div class="media-card bg-white rounded-lg overflow-hidden shadow transition duration-300">
+                            <img src="img/cimattres.jpeg" alt="" class="w-full h-48 object-cover">
+                        </div>
+                        <div class="media-card bg-white rounded-lg overflow-hidden shadow transition duration-300">
+                            <img src="img/cimatuno.JPG" alt="" class="w-full h-48 object-cover">
+                        </div>
+                        <div class="media-card bg-white rounded-lg overflow-hidden shadow transition duration-300">
+                            <img src="img/ecomdos.jpg" alt="" class="w-full h-48 object-cover">
+                        </div>
+                        <div class="media-card bg-white rounded-lg overflow-hidden shadow transition duration-300">
+                            <img src="img/ecomuno.jpg" alt="" class="w-full h-48 object-cover">
+                        </div>
+						<div class="media-card bg-white rounded-lg overflow-hidden shadow transition duration-300">
+                            <img src="img/fotobichos.jpeg" alt="" class="w-full h-48 object-cover">
+                        </div>
+						<div class="media-card bg-white rounded-lg overflow-hidden shadow transition duration-300">
+                            <img src="img/fotoseñor.jpg" alt="" class="w-full h-48 object-cover">
+                        </div>
+						
+						<div class="media-card bg-white rounded-lg overflow-hidden shadow transition duration-300">
+                            <img src="img/favorita.JPG" alt="" class="w-full h-48 object-cover">
+                        </div>
+						<div class="media-card bg-white rounded-lg overflow-hidden shadow transition duration-300">
+                            <img src="img/azteca.JPG" alt="" class="w-full h-48 object-cover">
+                        </div>
+                    </div>
+                </div>
+				<div class="flex gap-4 mt-12 mb-5 flex-wrap justify-between">
+    <!-- Imagen 1 -->
+    <div class="media-card bg-white rounded-lg overflow-hidden shadow transition duration-300 flex-1 min-w-[120px]">
+        <img src="img/cimatdos.JPG" alt="" class="w-full h-96 object-cover">
+    </div>
+
+    <!-- Imagen 2 -->
+    <div class="media-card bg-white rounded-lg overflow-hidden shadow transition duration-300 flex-1 min-w-[120px]">
+        <img src="img/fototodos.JPG" alt="" class="w-full h-96 object-cover">
+    </div>
+
+    <!-- Imagen 3 -->
+    <div class="media-card bg-white rounded-lg overflow-hidden shadow transition duration-300 flex-1 min-w-[120px]">
+        <img src="img/fotoskibidiluis.JPG" alt="" class="w-full h-96 object-cover">
+    </div>
+
+    <!-- Imagen 4 -->
+    <div class="media-card bg-white rounded-lg overflow-hidden shadow transition duration-300 flex-1 min-w-[120px]">
+        <img src="img/melvin.jpg" alt="" class="w-full h-96 object-cover">
+    </div>
+
+    <!-- Imagen 5 -->
+    <div class="media-card bg-white rounded-lg overflow-hidden shadow transition duration-300 flex-1 min-w-[120px]">
+        <img src="img/fotoseñor.jpg" alt="" class="w-full h-96 object-cover">
+    </div>
+</div>
+
+
+				
+				
+				
+              
+                
+			
+			<div class="mb-12">
+                    
+                    <h3 class="text-xl font-medium mb-4 text-gray-700">Creativa</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div class="media-card bg-white rounded-lg overflow-hidden shadow transition duration-300">
+                            <img src="img/fotoretrato.jpg" alt="" class="w-full h-48 object-cover">
+                        </div>
+                        <div class="media-card bg-white rounded-lg overflow-hidden shadow transition duration-300">
+                            <img src="img/fotorapido.jpg" alt="" class="w-full h-48 object-cover">
+                        </div>
+                        <div class="media-card bg-white rounded-lg overflow-hidden shadow transition duration-300">
+                            <img src="img/fotosplash.jpg" alt="" class="w-full h-48 object-cover">
+                        </div>
+                        <div class="media-card bg-white rounded-lg overflow-hidden shadow transition duration-300">
+                            <img src="img/fotoluz.jpg" alt="" class="w-full h-48 object-cover">
+                        </div>
+					
+                    </div>
+                </div>
+				<div class="flex gap-4 flex-wrap justify-between mb-5">
+    <!-- Imagen 1 -->
+    <div class="media-card bg-white rounded-lg overflow-hidden shadow transition duration-300 flex-1 min-w-[150px]">
+        <img src="img/fotomaquina.jpg" alt="" class="w-full h-96 object-cover">
+    </div>
+
+    <!-- Imagen 2 -->
+    <div class="media-card bg-white rounded-lg overflow-hidden shadow transition duration-300 flex-1 min-w-[150px]">
+        <img src="img/fotocongelado.jpg" alt="" class="w-full h-96 object-cover">
+    </div>
+
+    <!-- Imagen 3 -->
+    <div class="media-card bg-white rounded-lg overflow-hidden shadow transition duration-300 flex-1 min-w-[150px]">
+        <img src="img/fotoplanta.jpg" alt="" class="w-full h-96 object-cover">
+    </div>
+
+    <!-- Imagen 4 -->
+    <div class="media-card bg-white rounded-lg overflow-hidden shadow transition duration-300 flex-1 min-w-[150px]">
+        <img src="img/fotoperfume.jpg" alt="" class="w-full h-96 object-cover">
+    </div>
+
+    <!-- Imagen 5 -->
+    <div class="media-card bg-white rounded-lg overflow-hidden shadow transition duration-300 flex-1 min-w-[150px]">
+        <img src="img/fotocreativo.jpeg" alt="" class="w-full h-96 object-cover">
+    </div>
+</div>
+
+				  </div>
+                
+
+            <!-- Animations Tab -->
+            <div id="animations" class="tab-content">
+    <h2 class="text-2xl font-semibold mb-6 text-gray-800 text-center" style="color: #85054D;"><b>Animaciones</b></h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="media-card bg-white rounded-lg overflow-hidden shadow transition duration-300">
+            <div class="w-full h-48 relative">
+                <iframe 
+                    class="w-full h-full"
+                    src="https://www.youtube.com/embed/hLV8_VIy19M?si=uCskmUthqbXa1sof" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <div class="media-card bg-white rounded-lg overflow-hidden shadow transition duration-300">
+            <div class="w-full h-48 relative">
+                <iframe 
+                    class="w-full h-full"
+                    src="https://www.youtube.com/embed/rsiR4mcEau4?si=YDDeX1wnlaynkDq5" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <div class="media-card bg-white rounded-lg overflow-hidden shadow transition duration-300">
+            <div class="w-full h-48 relative">
+                <iframe 
+                    class="w-full h-full"
+                    src="https://www.youtube.com/embed/1I4_YPw_Z2g?si=i7aIqYk2gFwlTlgn" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <div class="media-card bg-white rounded-lg overflow-hidden shadow transition duration-300">
+            <div class="w-full h-48 relative">
+                <iframe 
+                    class="w-full h-full"
+                    src="https://www.youtube.com/embed/NlwgO7e0R7o?si=ShmlpLTsgyugysRC" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <div class="media-card bg-white rounded-lg overflow-hidden shadow transition duration-300">
+            <div class="w-full h-48 relative">
+                <iframe 
+                    class="w-full h-full"
+                    src="https://www.youtube.com/embed/NaOD-c3PQ24?si=BzEb76bZ6TSRTBAI" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="shorts" class="tab-content">
+    <h2 class="text-2xl font-semibold mb-6 text-gray-800 text-center" style="color: #85054D;"><b>Shorts o Reels</b></h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="media-card bg-white rounded-lg overflow-hidden shadow transition duration-300">
+            <div class="w-full h-96 relative">
+                <iframe 
+                    class="w-full h-full"
+                    src="https://www.youtube.com/embed/HMLHcejmvoY" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <div class="media-card bg-white rounded-lg overflow-hidden shadow transition duration-300">
+            <div class="w-full h-96 relative">
+                <iframe 
+                    class="w-full h-full"
+                    src="https://www.youtube.com/embed/T_pstWo85ic" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <div class="media-card bg-white rounded-lg overflow-hidden shadow transition duration-300">
+            <div class="w-full h-96 relative">
+                <iframe 
+                    class="w-full h-full"
+                    src="https://www.youtube.com/embed/SJJmzH_m3Zo" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <div class="media-card bg-white rounded-lg overflow-hidden shadow transition duration-300">
+            <div class="w-full h-96 relative">
+                <iframe 
+                    class="w-full h-full"
+                    src="https://www.youtube.com/embed/11hotoh0G84" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="videos" class="tab-content">
+    <h2 class="text-2xl font-semibold mb-6 text-gray-800 text-center" style="color: #85054D;"><b>Videos</b></h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="media-card bg-white rounded-lg overflow-hidden shadow transition duration-300">
+            <div class="w-full h-48 relative">
+                <iframe 
+                    class="w-full h-full"
+                    src="https://www.youtube.com/embed/UxFJIUrshkM?si=PVxld3bZIQVkwW0p" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <div class="media-card bg-white rounded-lg overflow-hidden shadow transition duration-300">
+            <div class="w-full h-48 relative">
+                <iframe 
+                    class="w-full h-full"
+                    src="https://www.youtube.com/embed/QrUp_MOfso4?si=XeuaSo4NWn8P4KFV" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <div class="media-card bg-white rounded-lg overflow-hidden shadow transition duration-300">
+            <div class="w-full h-48 relative">
+                <iframe 
+                    class="w-full h-full"
+                    src="https://www.youtube.com/embed/LfLWwR8FPEc?si=3yx9YWaWE55N6Pjk" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <div class="media-card bg-white rounded-lg overflow-hidden shadow transition duration-300">
+            <div class="w-full h-48 relative">
+                <iframe 
+                    class="w-full h-full"
+                    src="https://www.youtube.com/embed/L9IwipAKMmU?si=gJW7GyVKDoSv-U1c" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <div class="media-card bg-white rounded-lg overflow-hidden shadow transition duration-300">
+            <div class="w-full h-48 relative">
+                <iframe 
+                    class="w-full h-full"
+                    src="https://www.youtube.com/embed/_ghOccMqiKs?si=79VoE-2mULOyZ44k" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            <!-- Audio Tab -->
+            <div id="audio" class="tab-content">
+                <h2 class="text-2xl font-semibold mb-6 text-gray-800 text-center" style="color: #85054D;"><b>Audio</b></h2>
+                
+               <div class="relative w-full h-48 rounded-lg overflow-hidden shadow" style="margin-bottom: 50px;">
+  <iframe 
+    class="w-full h-full object-cover"
+    src="https://www.youtube.com/embed/TqsgMfjOHU8?si=7rKXaPclzv9Vw39v" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen>
+  </iframe>
+</div>
+
+               <div class="space-y-4">
+  <div class="flex items-center justify-between bg-gray-100 p-4 rounded-lg">
+    <div>
+      <p class="font-bold text-gray-800">CRÓNICA</p>
+      <p class="font-bold text-sm" style="color: #85054D;">CHEPE EL HACELOTODO</p>
+    </div>
+    <button class="audio-control p-3 rounded-full transition duration-300" style="background-color: #85054D; color: white;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+      </svg>
+    </button>
+    <audio src="cronica.mp3"></audio>
+  </div>
+</div>
+
+<script>
+  const audioButton = document.querySelector('.audio-control');
+  const audio = document.querySelector('audio');
+
+  audioButton.addEventListener('click', () => {
+    if(audio.paused){
+      audio.play();
+      audioButton.classList.add('playing');
+    } else {
+      audio.pause();
+      audioButton.classList.remove('playing');
+    }
+  });
+</script>
+
+                    
+                    
+                   
+                </div>
+
+            <!-- Design Tab -->
+            <div id="design" class="tab-content">
+    <h2 class="text-2xl font-semibold mb-6 text-gray-800 text-center" style="color: #85054D;"><b>Diseño</b></h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-[4%]">
+        <!-- Imagen 1 -->
+        <div class="design-card relative rounded-lg overflow-hidden shadow transition duration-300">
+            <div class="aspect-[4/5] w-full">
+                <img src="img/d38dc8213525941.674e7dc20aac7.jpg.jpeg" alt="UI Concept" class="w-full h-full object-cover">
+            </div>
+            <div class="overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4 text-white">
+                <p class="font-bold text-lg">PUPUSÍN</p>
+                <p class="text-sm">PDF Interactivo</p>
+            </div>
+        </div>
+
+        <!-- Imagen 2 -->
+        <div class="design-card relative rounded-lg overflow-hidden shadow transition duration-300">
+            <div class="aspect-[4/5] w-full">
+                <img src="img/353015213525941.674e7dc20a361.jpg.jpeg" alt="Poster tipográfico" class="w-full h-full object-cover">
+            </div>
+            <div class="overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4 text-white">
+                <p class="font-bold text-lg">BOLETÍN DIGITAL INTERACTIVO</p>
+            </div>
+        </div>
+
+        <!-- Imagen 3 -->
+        <div class="design-card relative rounded-lg overflow-hidden shadow transition duration-300">
+            <div class="aspect-[4/5] w-full">
+                <img src="img/f56c90213525941.674f2a135f158.jpg.jpeg" alt="Identidad de marca" class="w-full h-full object-cover">
+            </div>
+            <div class="overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4 text-white">
+                <p class="font-bold text-lg">DISEÑO</p>
+                <p class="text-sm">Creación de pantallas para un videojuego</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+			            </div>
+	
+		
+
+    <custom-footer></custom-footer>
+
+	<div class="fixed bottom-8 right-8 z-50">
+    <a href="https://wa.me/50370923999" target="_blank" 
+       class="w-16 h-16 bg-[#FB8700] rounded-full flex items-center justify-center shadow-lg hover:bg-[#FB8700] transition-all text-white">
+        <i data-feather="message-circle" class="w-8 h-8"></i>
+    </a>
+</div>
+	
+    <script>
+        // Tab functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.nav-tab');
+            const tabContents = document.querySelectorAll('.tab-content');
+            
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    // Remove active class from all tabs and contents
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(content => content.classList.remove('active'));
+                    
+                    // Add active class to clicked tab
+                    this.classList.add('active');
+                    
+                    // Show corresponding content
+                    const tabId = this.getAttribute('data-tab');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+            
+            // Set first tab as active by default
+            tabs[0].classList.add('active');
+            
+            // Audio controls
+            const audioControls = document.querySelectorAll('.audio-control');
+            audioControls.forEach(control => {
+                const audio = control.nextElementSibling;
+                let isPlaying = false;
+                
+                control.addEventListener('click', function() {
+                    if (isPlaying) {
+                        audio.pause();
+                        control.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/></svg>';
+                    } else {
+                        audio.play();
+                        control.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5zm5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5z"/></svg>';
+                    }
+                    isPlaying = !isPlaying;
+                });
+            });
+            
+            // Pause all other audios when one is playing
+            document.querySelectorAll('audio').forEach(audio => {
+                audio.addEventListener('play', function() {
+                    document.querySelectorAll('audio').forEach(otherAudio => {
+                        if (otherAudio !== audio) {
+                            otherAudio.pause();
+                            const control = otherAudio.previousElementSibling;
+                            control.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/></svg>';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+	
+	<script src="components/header.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+    
+<script>
+    feather.replace();
+</script>
+	<div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center hidden z-[9999]" onclick="closeModal(event)">
+        <img id="modalImg" src="" alt="Imagen grande" class="max-h-[90%] max-w-[90%] rounded-lg shadow-lg pointer-events-none">
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        function openModal(img) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImg');
+            modalImg.src = img.querySelector('img').src;
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(event) {
+            const modalImg = document.getElementById('modalImg');
+            if (event.target !== modalImg) {
+                document.getElementById('imageModal').classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        document.querySelectorAll('.media-card, .design-card').forEach(card => {
+            card.style.cursor = 'pointer';
+            card.addEventListener('click', function() {
+                openModal(card);
+            });
+        });
+
+        document.getElementById('imageModal').addEventListener('click', closeModal);
+    });
+    </script>
+
+</body>
+</html>
